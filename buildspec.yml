@@ -11,11 +11,9 @@ phases:
 
       # 環境情報の表示
       - echo BRANCH $BRANCH
-      # - echo cargo --version \"$(cargo --version)\"
-      # - echo rustc --version \"$(rustc --version)\"
 
       # test
       - go test ./...
   build:
     commands:
-      # - cargo build
+      - go build
